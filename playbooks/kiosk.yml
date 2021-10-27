@@ -1,0 +1,8 @@
+---
+# file: kiosk.yml
+- hosts: all
+  environment:
+    PATH: /usr/bin:/usr/sbin
+
+  roles:
+    - ubuntu-ui

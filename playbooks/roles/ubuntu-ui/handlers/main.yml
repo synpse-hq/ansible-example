@@ -1,0 +1,9 @@
+---
+
+- name: restart device
+  reboot:
+    reboot_timeout: 3600
+
+- name: systemd reload
+  systemd:
+    daemon_reload: true
