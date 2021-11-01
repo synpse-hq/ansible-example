@@ -14,5 +14,6 @@ spec:
       networkMode: default
       privileged: true
       env:
+        - name: URL
           value: https://synpse.net
       restartPolicy: {}
