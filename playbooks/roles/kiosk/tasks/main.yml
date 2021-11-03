@@ -15,6 +15,7 @@
     - xdotool 
     - xserver-xorg-video-fbdev
     - python3-pyinotify
+    - libwebkit2gtk-4.0-dev
 
 - name: Ensure browser is installed
   apt:
