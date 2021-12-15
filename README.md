@@ -15,6 +15,11 @@ playbook to configure the minimal GUI environment. This will create user, config
 sudo synpse build --image ubuntu-20.04.3-preinstalled-server-arm64+raspi.img --wifi-name SSID --wifi-password your_wifi_pass
 ```
 
+Ping:
+```
+ansible -i inventory/online.sh all -m ping
+```
+
 Install required packages for minimal GUI environment:
 ``` 
 ansible-playbook -i inventory/kiosk.sh playbooks/kiosk.yml
